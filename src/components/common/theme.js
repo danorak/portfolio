@@ -1,10 +1,16 @@
-export default {
-    bg: '#1C1A18',
-    primary: '#FF3366',
-    secondary: '#cdcdcd',
-    tertiary: '#364156',
-    typography: {
-        font: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
-    }
+const colors = {
+    white: '#E5E5E5',
+    black: '#363636',
+    red: '#E3655B'
+};
 
-}
+const fonts = {
+    // serif: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
+    serif: "'Playfair Display'",
+    sansSerif: "'PT Sans',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
+};
+
+export default {
+    colors,
+    fonts
+};
