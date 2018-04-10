@@ -9,8 +9,8 @@ import './index.css';
 
 const LayoutContainer = styled.div`
   display: grid;
-  grid-template-columns: 2fr 6fr 2fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   height: 100vh;
 `;
 
@@ -35,7 +35,7 @@ const TemplateWrapper = ({ children }) => (
         ]}
       />
       <LayoutContainer>
-        <div style={{gridColumn: 2}}>
+        <div style={{gridColumn: 2, gridRow: 2}}>
           {children()}
         </div>
       </LayoutContainer>
