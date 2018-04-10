@@ -1,16 +1,17 @@
 import styled from 'styled-components';
-import { color, fontFamily } from 'styled-system';
+import { color, fontFamily, fontSize } from 'styled-system';
 
 const P = styled.p`
     ${color};
     ${fontFamily};
-    font-size: 20px;
+    ${fontSize};
     line-height: 1.3;
 `;
 
 P.defaultProps = {
     color: 'black',
-    fontFamily: 'sansSerif'
+    fontFamily: 'serif',
+    fontSize: [1,3]
 };
 
 export default P;

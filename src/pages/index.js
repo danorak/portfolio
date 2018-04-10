@@ -2,7 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Heading from '../components/atoms/typography/Heading';
 import Intro from '../components/atoms/typography/Intro';
-import P from '../components/atoms/P';
+import A from '../components/atoms/A';
+import HorizontalList from '../components/molecules/HorizontalList'
 
 const IndexPage = () => (
   <div>
@@ -11,14 +12,14 @@ const IndexPage = () => (
     </section>
     <section>
       <Intro>I’m Dan, a designer and developer based in Sheffield, UK.</Intro>
+      <Intro>I’m currently building Capital One UK’s design system, and trying to find ways to bring design and engineering closer together.</Intro>
     </section>
     <section>
-      <P>I’m currently building Capital One UK’s design system, and trying to find ways to bring design and engineering closer together.</P>
-    </section>
-    <section>
-      <a href="#">Twitter.</a>
-      <a href="#">LinkedIn.</a>
-      <a href="#">Email😔.</a>
+      <HorizontalList>
+        <A href="#">Twitter.</A>
+        <A href="#">LinkedIn.</A>
+        <A href="#">Email😔.</A>
+      </HorizontalList>
     </section>
   </div>
 )

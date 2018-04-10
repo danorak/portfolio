@@ -1,8 +1,8 @@
 import styled from 'styled-components'
-import { color, fontFamily } from 'styled-system';
+import { color, fontFamily, fontSize } from 'styled-system';
 
 const Intro = styled.p`
-    font-size: 1.777em;
+    ${fontSize};
     line-height: 1.2;
     ${color};
     ${fontFamily};
@@ -10,7 +10,8 @@ const Intro = styled.p`
 
 Intro.defaultProps = {
     color: 'black',
-    fontFamily: 'serif'
+    fontFamily: 'sansSerif',
+    fontSize: [0,3]
 };
 
 export default Intro;
